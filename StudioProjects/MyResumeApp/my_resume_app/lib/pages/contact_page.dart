@@ -72,11 +72,11 @@ class ContactPage extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: Text('Send Message'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                   ),
+                  child: Text('Send Message'),
                 ),
               ),
               SizedBox(height: 20),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 
 class BottomAppBarPage extends StatefulWidget {
+  const BottomAppBarPage({super.key});
+
 
   @override
   State<BottomAppBarPage> createState() => _BottomAppBarPageState();

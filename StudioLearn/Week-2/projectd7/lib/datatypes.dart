@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
   dynamic myvalue = 'karan';
   List<String> list= ["Apple","Banana","Mango","karan","soniya"];
 
+  MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     myvalue  = 23;
@@ -31,13 +33,13 @@ class MyApp extends StatelessWidget {
             children: [
               Text('$age'),
               Text('$price'),
-              Text('$name'),
+              Text(name),
               Text("Is Student? bool ${value? "yes" : "No" }"),
               Text("$person"),
               Text("$myvalue"),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children:list.map((fruit)=>Text("$fruit")).toList(),
+                children:list.map((fruit)=>Text(fruit)).toList(),
               )
 
             ],
